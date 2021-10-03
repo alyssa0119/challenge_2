@@ -10,10 +10,12 @@ import sys
 import fire
 import questionary
 from pathlib import Path
+
 csvpath = Path("daily_rate_sheet.csv")
 
 #How does it know where to pull these qualifier files from?
 #How do I get them to be NOT white text?
+
 from qualifier.utils.fileio import load_csv
 
 from qualifier.utils.calculators import (
@@ -33,8 +35,10 @@ def load_bank_data():
     Returns:
         The bank data from the data rate sheet CSV file.
     """
+#What am I finding? Latest banking data. 
+#Pull in CSV. Is this asking for number of banks? Account balances?
 
-    csvpath = questionary.text("Enter a file path to a rate-sheet (.csv):").ask()
+    csvpath = questionary.text("daily_rate_sheet.csv").ask()
     csvpath = Path(csvpath)
     if not csvpath.exists():
         sys.exit(f"Oops! Can't find this path: {csvpath}")
