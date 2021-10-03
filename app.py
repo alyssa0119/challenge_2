@@ -2,15 +2,18 @@
 """Loan Qualifier Application.
 
 This is a command line application to match applicants with qualifying loans.
-
 Example:
     $ python app.py
 """
+
 import sys
 import fire
 import questionary
 from pathlib import Path
+csvpath = Path("daily_rate_sheet.csv")
 
+#How does it know where to pull these qualifier files from?
+#How do I get them to be NOT white text?
 from qualifier.utils.fileio import load_csv
 
 from qualifier.utils.calculators import (
