@@ -14,7 +14,8 @@ from pathlib import Path
 csvpath = Path("daily_rate_sheet.csv")
 
 #How does it know where to pull these qualifier files from?
-#How do I get them to be NOT white text?
+#How do I get them to be NOT white text? 
+# WOOT!
 
 from qualifier.utils.fileio import load_csv
 
@@ -45,6 +46,9 @@ def load_bank_data():
 
     return load_csv(csvpath)
 
+#I got the OOPS message. didn't save. Computer restarted. SO FRUSTRATED!
+
+#UGH ugh ugh you can do this!
 
 def get_applicant_info():
     """Prompt dialog to get the applicant's financial information.
@@ -52,6 +56,7 @@ def get_applicant_info():
     Returns:
         Returns the applicant's financial information.
     """
+#What am I looking for? Financial info for applicants.
 
     credit_score = questionary.text("What's your credit score?").ask()
     debt = questionary.text("What's your current amount of monthly debt?").ask()
