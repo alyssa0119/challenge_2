@@ -151,3 +151,9 @@ def run():
 
 if __name__ == "__main__":
     fire.Fire(run)
+
+
+
+
+#THIS IS SO EMBARASSING.
+#I didn't pay this much to fail!
