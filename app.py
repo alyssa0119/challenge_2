@@ -56,7 +56,9 @@ def get_applicant_info():
     Returns:
         Returns the applicant's financial information.
     """
-#What am I looking for? Financial info for applicants.
+#What am I looking for? Financial info for applicants. 
+#What kind of financial information?
+
 
     credit_score = questionary.text("What's your credit score?").ask()
     debt = questionary.text("What's your current amount of monthly debt?").ask()
@@ -72,6 +74,9 @@ def get_applicant_info():
 
     return credit_score, debt, income, loan_amount, home_value
 
+#What kind of information am I looking for? 
+    #Qualifing clients
+    ##Qualifying Loans within the bank(s)
 
 def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_value):
     """Determine which loans the user qualifies for.
@@ -94,6 +99,8 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
         A list of the banks willing to underwrite the loan.
 
     """
+#I CAN DO THIS MATH!!!!!
+#You need to get out of your head. Mesh the math and code together. You can do it.
 
     # Calculate the monthly debt ratio
     monthly_debt_ratio = calculate_monthly_debt_ratio(debt, income)
